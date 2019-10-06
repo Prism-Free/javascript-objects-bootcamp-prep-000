@@ -3,7 +3,8 @@ var playlist = { artistName: 'songTitle'};
 
 function updatePlaylist(playlist,artistName,songTitle) {
   var newSong = playlist.artistName = songTitle
- return playlist.unshift(newSong)
+  playlist.unshift(newSong)
+  return playlist
 }
 
 function removeFromPlaylist(playlist,artistName) {
